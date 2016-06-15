@@ -14,7 +14,11 @@ See the tutorial, https://github.com/jackreichelt/slackbot-tutorial/blob/master/
 
 #### Run
 
-    $ docker run -itd echobot
+Ensure that you set `TOKEN` to a valid Slack token, see https://api.slack.com/bot-users.
+
+    $ docker run -itd \
+          -e TOKEN=xoxb-23095483222-c7rYYq7pKaRcgp1LpU3V8w2d \
+              echobot
 
 #### Tag and Push
 
@@ -23,11 +27,12 @@ See the tutorial, https://github.com/jackreichelt/slackbot-tutorial/blob/master/
 
 ##### Runtime Environment Variables
 
-- `TOKEN` - the Slack token for the bot
+- `TOKEN` - the Slack token for the bot user
 
 License and Authors
 -------------------
 
+```
 The MIT License (MIT)
 
 Copyright (c) 2016 Jack Reichelt
@@ -49,3 +54,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
