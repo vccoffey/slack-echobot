@@ -8,7 +8,7 @@ import os
 token = os.environ.get('TOKEN', None) # found at https://api.slack.com/web#authentication
 print('found token',token[0:6],'...')
 # sc = SlackClient(token)
-sc = WebClient(token)
+sc = WebClient(token=token)
 if sc.rtm_connect() == True:
   print('Connected.')
   while True:
