@@ -9,6 +9,8 @@ slack_token = os.environ.get('TOKEN', None) # found at https://api.slack.com/web
 print('found token',slack_token[0:6],'...')
 
 client = WebClient(token=slack_token)
+print(client.rtm_connect() )
+
 
 # sc = WebClient(token=token)
 # if sc.rtm_connect() == True:
