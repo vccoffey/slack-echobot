@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 from time import sleep
-from slack import SlackClient
+# from slack import SlackClient
+import slack
 import os
 
 token = os.environ.get('TOKEN', None) # found at https://api.slack.com/web#authentication
