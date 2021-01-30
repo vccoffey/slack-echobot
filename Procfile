@@ -1,1 +1,1 @@
-worker: python echobot.py
+web: gunicorn echobot
